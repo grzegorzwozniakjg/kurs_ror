@@ -18,9 +18,24 @@ def buy_meal(meal_name = "tofucznica") #parametr domyslny
 end
 
 buy_meal("pizza")
+buy_meal()
 
 def buy_car(brand, car_color)
-    p "Kupiles #{brand} ktory ma kolor #{car_color}"
+    p "Kupiles auto marki #{brand} ktore ma kolor #{car_color}"
 end
 
 buy_car("Toyota", "Czarny")
+
+def kup_rupcia(nazwa = "rupcio", kolor = "rupciowy", rocznik = "gruchot")
+    p "Kupilem auto marki #{nazwa} w kolorze #{kolor} z rocznika #{rocznik}"
+end
+
+#kup_rupcia()
+kup_rupcia()
+
+
+def kup_mieszkanie (miasto , dzielnica ,powierzchnia, cena, stan)
+    p "Kupiles mieszkanie w #{miasto} w dzielnicy #{dzielnica} o powierzchni #{powierzchnia} m2, kosztowało #{cena} PLN, stan mieszkania: #{stan}"
+end
+
+kup_mieszkanie("Zadupie", "Rozróby",  "8", 20000, "butikowy")
